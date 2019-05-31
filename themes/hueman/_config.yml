@@ -8,9 +8,9 @@ menu:
 # Customize
 customize:
     logo:
-        width: 165
+        width: 190
         height: 60
-        url: 
+        url: /sunwei/img/logo.png
     theme_color: '#006bde'
     highlight: androidstudio
     sidebar: left # sidebar position, options: left, right
