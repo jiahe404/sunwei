@@ -4,10 +4,10 @@
 
 # Site
 title: 古树放歌
-subtitle: 
+subtitle:
 description:
 keywords:
-author: er
+author: lr
 language: zh-CN
 timezone:
 
@@ -15,8 +15,12 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com/sunwei
 root: /sunwei
-permalink: :year/:month/:day/:title/
+permalink: :abbrlink.html
 permalink_defaults:
+
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: dec    # 进制：dec(default) and hex
 
 # Directory
 source_dir: source
