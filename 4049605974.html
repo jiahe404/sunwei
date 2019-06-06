@@ -172,43 +172,43 @@
         
 <div class="article-gallery">
     
-    <a class="gallery-item" href="/sunwei/img/blog/about/31558872146_.pic_hd.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/about/31558872146_.pic_hd.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/about/31558872146_.pic_hd.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/9.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/9.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/9.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/2.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/2.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/2.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/3.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/3.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/3.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/4.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/4.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/4.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/5.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/5.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/5.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/6.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/6.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/6.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/7.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/7.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/7.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/8.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/8.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/8.jpg" itemprop="image">
     </a>
     
-    <a class="gallery-item" href="/sunwei/img/blog/daonian/1.jpg" rel="gallery_cjwk7p9yo0004tpwemzmj1n83">
+    <a class="gallery-item" href="/sunwei/img/blog/daonian/1.jpg" rel="gallery_cjwk7xsma000404weiqz64m4u">
         <img src="/sunwei/img/blog/daonian/1.jpg" itemprop="image">
     </a>
     
@@ -363,7 +363,7 @@
 
 
 
-    <a data-url="http://yoursite.com/sunwei/4049605974.html" data-id="cjwk7p9yo0004tpwemzmj1n83" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/sunwei/4049605974.html" data-id="cjwk7xsma000404weiqz64m4u" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -456,9 +456,8 @@
     <section id="comments">
     
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+    <div id="valine-thread"></div>
+
 
     
     </section>
@@ -626,20 +625,22 @@ new Valine({
 
         
     
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
     <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'http://yoursite.com/sunwei/4049605974.html';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+        new Valine({
+            el: '#valine-thread' ,
+            notify:false,
+            verify:false,
+            app_id: 'jaNA0mXxtqNdXswP6XKnYWdp-gzGzoHsz',
+            app_key: '2PHDXCcJLxslkKntytzA9ztX',
+            placeholder: '欢迎留言',
+            pageSize: '10',
+            avatar: 'identicon',
+            avatar_cdn:  'https://gravatar.loli.net/avatar/'
+        });
     </script>
+
 
 
 
