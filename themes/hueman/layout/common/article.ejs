@@ -5,6 +5,7 @@
                 <%- partial('post/title', { class_name: 'article-title' }) %>
             </header>
         <% } %>
+        阅读数量:<span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次
         <% if (post.layout != 'page') { %>
             <div class="article-meta">
                 <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>

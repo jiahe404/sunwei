@@ -15,3 +15,68 @@
         </div>
     </div>
 </footer>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+<script>
+    var APP_ID = 'jaNA0mXxtqNdXswP6XKnYWdp-gzGzoHsz';
+    var APP_KEY = '2PHDXCcJLxslkKntytzA9ztX';
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    // 显示次数
+    function showTime(Counter) {
+        var query = new AV.Query("Counter");
+        if($(".leancloud_visitors").length > 0){
+            var url = $(".leancloud_visitors").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '--');
+            }, function (error) {
+                // error is an instance of AVError.
+            });
+        }
+    }
+    // 追加pv
+    function addCount(Counter) {
+        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'jiahe404.github.io/sunwei/';
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {
+        })
+    }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        addCount(Counter);
+        showTime(Counter);
+    });
+</script>
+<!-- <script>
+// Register AV objects to the global
+window.AV = require('leancloud-storage');
+
+// Use import
+import Valine from 'valine';
+// or Use require
+const Valine = require('valine');
+new Valine({
+  el: '#comment' ,
+  notify: true,
+  verify: false,
+  appId: 'jaNA0mXxtqNdXswP6XKnYWdp-gzGzoHsz',
+  appKey: '2PHDXCcJLxslkKntytzA9ztX',
+  placeholder: '来一发，等着你！',
+  path: window.location.pathname,
+  avatar: 'mp',
+  pageSize: '10',
+  highlight: '10',
+  visitor: 'true'
+});
+</script> -->
