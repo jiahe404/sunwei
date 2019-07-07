@@ -22,6 +22,7 @@ sidebar:
     tags: '标签'
     tag_cloud: '标签云'
     catalogue: '目录'
+    search: '百度'
 article:
     comments: '评论'
     share: '分享到'
@@ -32,3 +33,8 @@ insight:
     categories: '分类'
     tags: '标签'
     untitled: '(未命名)'
+customize:
+    social_links:
+      search: '百度'
+social_links:
+    search: '百度'
