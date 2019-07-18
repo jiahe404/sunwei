@@ -3,7 +3,7 @@ title: 关于作者
 date: 2019-05-26 18:49:43
 ---
 
-![摄于1985年5月6日，《古树放歌》封面](/sunwei/img/blog/about/31558872146_.pic_hd.jpg)
+![摄于1985年5月6日，《古树放歌》封面](/sunwei/img/blog/about/sun_island.jpg)
 
 孙维，笔名维德，男，大专文化，技术员，中共党员。
 
